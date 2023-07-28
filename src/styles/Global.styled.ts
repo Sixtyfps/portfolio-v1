@@ -33,12 +33,10 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
   }
   
-  section:nth-of-type(odd) {
+  section {
     background-color: ${theme.colors.primaryBg};
   }
 
-  section:nth-of-type(even) {
-    background-color: ${theme.colors.secondaryBg};
-  }
+
   
 `
