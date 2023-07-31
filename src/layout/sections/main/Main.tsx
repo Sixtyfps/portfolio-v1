@@ -34,7 +34,8 @@ const AboutMe = styled.div`
 const PhotoContainer = styled.div`
   position: relative;
   &::after {
-    top: 98%;
+    top: 99%;
+    font-size: 20px;
     position: absolute;
     width: 100%;
     padding: 0 10px;
@@ -50,19 +51,19 @@ const PhotoContainer = styled.div`
 `
 
 const StyledMain = styled.section`
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
 `
 
 const Photo = styled.img`
-  width: 300px;
-  height: 400px;
+  width: 430px;
+  height: 560px;
   object-fit: cover;
 `
 
 const MainTitle = styled.h1`
   color: ${theme.colors.accent};
-  font-size: 35px;
+  font-size: 40px;
 `
 
 const Name = styled.h2`
