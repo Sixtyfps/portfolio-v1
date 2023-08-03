@@ -31,6 +31,8 @@ export const GlobalStyle = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
+    cursor: pointer;
+    color: ${theme.colors.font};
   }
   
   section {
@@ -38,6 +40,14 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.primaryBg};
   }
 
-
+  h3 {
+    font-family: 'Fira Code', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  p {
+    line-height: 1.5em;
+  }
   
 `

@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
+import {Link} from "../../../../components/Link";
+import {theme} from "../../../../styles/Theme";
+import {Button} from "../../../../components/Button";
 
 type WorkPropsType = {
     title: string
@@ -7,38 +10,80 @@ type WorkPropsType = {
     src: string
 }
 
- export const Work = (props: WorkPropsType) => {
+export const Work = (props: WorkPropsType) => {
     return (
         <StyledWork>
-            <Image src={props.src} alt=""/>
-            <Title>{props.title}</Title>
-            <Text>{props.text}</Text>
-            <Link href={"#"}>Demo</Link>
-            <Link href={"#"}>Code</Link>
+            <ImageWrapper>
+                <Image src={props.src} alt=""/>
+                <Button>View Project</Button>
+            </ImageWrapper>
+
+            <Description>
+                <Title>{props.title}</Title>
+                <Text>{props.text}</Text>
+                {/*<Link href={"#"}>Demo</Link>*/}
+                {/*<Link href={"#"}>Code</Link>*/}
+                <Button>Demo</Button>
+                <Button>Code</Button>
+            </Description>
+
         </StyledWork>
     );
 };
 
- const StyledWork = styled.div`
-   background-color: #5d4e4e;
-   max-width: 540px;
-   width: 100%;
- `
+const StyledWork = styled.div`
+  background-color: ${theme.colors.primaryBg};
+  max-width: 540px;
+  width: 100%;
+
+  Button + Button {
+    margin-left: 20px;
+  }
+`
+
+const ImageWrapper = styled.div`
+  position: relative;
+  
+  &:hover {
+    ${Button} {
+      opacity: 1;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, .3);
+      backdrop-filter: blur(15px);
+    }
+  }
+
+  ${Button} {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+`
 
 const Image = styled.img`
- width: 100%;
+  width: 100%;
   height: 260px;
   object-fit: cover;
- `
+`
 
-const Link = styled.a`
- 
- `
+const Description = styled.div`
+  padding: 25px 20px;
+`
 
 const Title = styled.h3`
- 
- `
+
+`
 
 const Text = styled.p`
- 
- `
+  margin: 14px 0 10px;
+`

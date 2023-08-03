@@ -11,24 +11,18 @@ export const Skills = () => {
         <StyledSkills>
             <Container>
                 <SectionTitle>skills</SectionTitle>
-                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-                    <Skill iconId={"logoHeader"}
-                           title={"html5"}
+                <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"flex-start"}>
+                    <Skill title={"html5"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa"}/>
-                    <Skill iconId={"github"}
-                           title={"css"}
+                    <Skill title={"css"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa"}/>
-                    <Skill iconId={"github"}
-                           title={"js"}
+                    <Skill title={"js"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa"}/>
-                    <Skill iconId={"github"}
-                           title={"js"}
+                    <Skill title={"js"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa"}/>
-                    <Skill iconId={"github"}
-                           title={"js"}
+                    <Skill title={"js"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa"}/>
-                    <Skill iconId={"github"}
-                           title={"js"}
+                    <Skill title={"js"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa"}/>
                 </FlexWrapper>
             </Container>
@@ -37,5 +31,5 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  //min-height: 100vh;
+
 `

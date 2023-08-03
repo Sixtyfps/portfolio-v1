@@ -62,8 +62,10 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-  color: ${theme.colors.accent};
-  font-size: 40px;
+  font-size: 50px;
+  background-image: linear-gradient(0deg, ${theme.colors.accent} 30%, ${theme.colors.primaryBg} 100%);
+  color: transparent;
+  -webkit-background-clip: text;
 `
 
 const Name = styled.h2`
@@ -73,12 +75,16 @@ const Name = styled.h2`
 
     &::before {
       content: "{";
-      color: ${theme.colors.accent};
+      background-image: linear-gradient(0deg, ${theme.colors.accent}, ${theme.colors.primaryBg});
+      color: transparent;
+      -webkit-background-clip: text;
     }
 
     &::after {
       content: "}";
-      color: ${theme.colors.accent};
+      background-image: linear-gradient(0deg, ${theme.colors.accent}, ${theme.colors.primaryBg});
+      color: transparent;
+      -webkit-background-clip: text;
     }
   }
 `

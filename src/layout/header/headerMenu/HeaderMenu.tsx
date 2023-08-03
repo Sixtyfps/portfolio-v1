@@ -33,12 +33,8 @@ const StyledHeaderMenu = styled.nav`
 `
 
 const Link = styled.a`
-  font-family: 'Fira Code', sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
-  color: transparent;
   &::before {
     content: "#";
     color: ${theme.colors.accent};
@@ -53,7 +49,6 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow: hidden;
-  //outline: 1px solid red;
   color: ${theme.colors.font};
   
   & + & {
