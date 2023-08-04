@@ -56,7 +56,7 @@ const ImageWrapper = styled.div`
       top: 0;
       bottom: 0;
       background: rgba(0, 0, 0, .3);
-      backdrop-filter: blur(15px);
+      backdrop-filter: blur(10px);
     }
   }
 

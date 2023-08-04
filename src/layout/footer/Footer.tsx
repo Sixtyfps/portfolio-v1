@@ -28,6 +28,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
+  border-top: 1px solid ${theme.colors.accentSecondary};
   background-color: ${theme.colors.primaryBg};
   min-height: 20vh;
 `

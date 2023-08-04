@@ -22,9 +22,9 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
+  padding: 10px 0 10px;
   background-color: ${theme.colors.header};
   backdrop-filter: blur(10px);
-  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
