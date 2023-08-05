@@ -4,6 +4,7 @@ import photo from '../../../assets/images/portf-main1.png'
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {ButtonAccent} from "../../../components/ButtonAccent";
 
 export const Main = () => {
     return (
@@ -14,6 +15,7 @@ export const Main = () => {
                         <span>Hello!👋🏻</span>
                         <Name>I'm <span>Jurij</span></Name>
                         <MainTitle>Web Developer</MainTitle>
+                        <ButtonAccent>Contact me!</ButtonAccent>
                     </AboutMe>
                     <PhotoContainer>
                         <Photo src={photo} alt=""/>
@@ -29,6 +31,9 @@ export const Main = () => {
 const AboutMe = styled.div`
   font-size: 32px;
   font-weight: 600;
+  ${ButtonAccent} {
+    margin: 60px 0 0;
+  }
 `
 
 const PhotoContainer = styled.div`

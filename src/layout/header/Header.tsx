@@ -6,7 +6,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {theme} from "../../styles/Theme";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 
-const items = ["home", "skills", "works", "testimony", "contact"]
+const items = ["home", "skills", "works", "about", "contact"]
 
 export const Header = () => {
     return (
