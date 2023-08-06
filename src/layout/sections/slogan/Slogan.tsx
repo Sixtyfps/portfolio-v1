@@ -5,6 +5,7 @@ import {Button} from "../../../components/Button";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {theme} from "../../../styles/Theme";
+import {Icon} from "../../../components/icon/Icon";
 
 export const Slogan = () => {
     return (
@@ -12,13 +13,23 @@ export const Slogan = () => {
             <Container>
                 <SectionTitle>I Am Available For Freelance</SectionTitle>
                 <FlexWrapper direction={"row"} justify={"space-between"}>
-                    <Text>I’m interested in freelance opportunities.
-                        However, if you have other request or question, don’t hesitate to contact me</Text>
+                    <Description>I’m interested in freelance opportunities.
+                        However, if you have other request or question, don’t hesitate to contact me
+                    </Description>
                     <ContactBox>
                         <h3>Message me here</h3>
-                        <Text>34411ds@gmail.com</Text>
-                        <Text>linkedin</Text>
-                        <Text>telegram</Text>
+                        <Contact href={"#"}>
+                            <Icon width={"30"} height={"30"} viewBox={"0 0 30 30"} iconId={"Email"}/>
+                            <IconText>34411ds@gmail.com</IconText>
+                        </Contact>
+                        <Contact href={"#"}>
+                            <Icon width={"30"} height={"30"} viewBox={"0 0 30 30"} iconId={"Linkedin"}/>
+                            <IconText>Linkedin</IconText>
+                        </Contact>
+                        <Contact href={"#"}>
+                            <Icon width={"30"} height={"30"} viewBox={"0 0 30 30"} iconId={"Telegram"}/>
+                            <IconText>Telegram</IconText>
+                        </Contact>
                     </ContactBox>
 
                 </FlexWrapper>
@@ -31,11 +42,24 @@ const StyledSlogan = styled.section`
 
 `
 
-const Text = styled.p`
+const Description = styled.p`
   width: 50%;
+`
+
+const Contact = styled.a`
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
 `
 
 const ContactBox = styled.div`
   padding: 16px;
   border: 1px solid ${theme.colors.accentSecondary};
+
+`
+
+const IconText = styled.p`
+  display: inline-block;
+  margin-left: 5px;
+  line-height: 30px;
 `
