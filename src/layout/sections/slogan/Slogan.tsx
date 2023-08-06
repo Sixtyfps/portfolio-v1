@@ -11,7 +11,7 @@ export const Slogan = () => {
     return (
         <StyledSlogan>
             <Container>
-                <SectionTitle>I Am Available For Freelance</SectionTitle>
+                <SectionTitle>freelance</SectionTitle>
                 <FlexWrapper direction={"row"} justify={"space-between"}>
                     <Description>I’m interested in freelance opportunities.
                         However, if you have other request or question, don’t hesitate to contact me
@@ -47,9 +47,15 @@ const Description = styled.p`
 `
 
 const Contact = styled.a`
+  color: ${theme.colors.accentSecondary};
   margin: 5px 0;
   display: flex;
   align-items: center;
+  
+  &:hover {
+    color: ${theme.colors.accent};
+    transform: translateY(-4px);
+  }
 `
 
 const ContactBox = styled.div`
