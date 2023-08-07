@@ -39,7 +39,7 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
-
+  padding-bottom: 150px;
 `
 
 const Description = styled.p`
