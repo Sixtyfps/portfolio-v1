@@ -12,7 +12,7 @@ export const About = () => {
         <StyledTestimony>
             <Container>
                 <SectionTitle>about me</SectionTitle>
-                <FlexWrapper align={"center"} justify={"space-between"}>
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                     <AboutMeText><p>Hello, i’m Jurij!</p>
                         <br/>
                         <p>I’m a self-taught front-end developer based in Riga, Latvia. I can develop responsive
@@ -37,11 +37,14 @@ export const About = () => {
 };
 
 const StyledTestimony = styled.section`
-
+  ${FlexWrapper} {
+    gap: 20px;
+  }
 `
 
 const AboutMeText = styled.div`
-  width: 60%;
+  width: 40%;
+  flex-grow: 1;
   //align-self: flex-start;
 
   ${ButtonAccent} {
@@ -51,6 +54,9 @@ const AboutMeText = styled.div`
 
 const PhotoContainer = styled.div`
   border-bottom: 1px solid ${theme.colors.accentSecondary};
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 `
 
 const Photo = styled.img`

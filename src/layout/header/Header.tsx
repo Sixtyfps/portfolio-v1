@@ -14,7 +14,9 @@ export const Header = () => {
         <StyledHeader>
             <Container>
                 <FlexWrapper justify={"space-between"} align={"center"}>
-                    <Logo/>
+                    <LogoWrapper>
+                        <Logo/>
+                    </LogoWrapper>
                     <HeaderMenu menuItems={items}/>
                     <MobileMenu menuItems={items}/>
 
@@ -27,12 +29,23 @@ export const Header = () => {
 const StyledHeader = styled.header`
   padding: 10px 0 10px;
   background-color: ${theme.colors.header};
-  backdrop-filter: blur(10px);
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
   right: 0;
-  z-index: 99999;
+  z-index: 99;
   
+  &::before {
+    backdrop-filter: blur(10px);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 `
 
+const LogoWrapper = styled.div`
+  z-index: 999;
+`

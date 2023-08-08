@@ -12,7 +12,7 @@ export const Slogan = () => {
         <StyledSlogan>
             <Container>
                 <SectionTitle>freelance</SectionTitle>
-                <FlexWrapper direction={"row"} justify={"space-between"}>
+                <FlexWrapper direction={"row"} justify={"space-between"} wrap={"wrap"}>
                     <Description>I’m interested in freelance opportunities.
                         However, if you have other request or question, don’t hesitate to contact me
                     </Description>
@@ -39,11 +39,17 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
+  ${FlexWrapper} {
+    gap: 20px;
+  }
   padding-bottom: 150px;
 `
 
 const Description = styled.p`
   width: 50%;
+  @media ${theme.media.tablet} {
+    flex-grow: 1;
+  }
 `
 
 const Contact = styled.a`
@@ -61,7 +67,11 @@ const Contact = styled.a`
 const ContactBox = styled.div`
   padding: 16px;
   border: 1px solid ${theme.colors.accentSecondary};
-
+  
+  @media ${theme.media.tablet} {
+    flex-grow: 1; 
+  }
+  
 `
 
 const IconText = styled.p`

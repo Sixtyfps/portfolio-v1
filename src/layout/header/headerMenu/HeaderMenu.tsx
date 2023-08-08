@@ -39,6 +39,7 @@ const StyledHeaderMenu = styled.nav`
 const Link = styled.a`
   font-size: 20px;
   font-weight: 500;
+  color: transparent;
   &::before {
     content: "#";
     color: ${theme.colors.accent};

@@ -36,8 +36,12 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   section {
-    padding: 70px 0;
+    padding: 80px 0;
     background-color: ${theme.colors.primaryBg};
+
+    @media ${theme.media.mobile} {
+      padding: 50px 0;
+    }
   }
 
   h3 {

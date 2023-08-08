@@ -18,13 +18,15 @@ export const TabMenu = (props: {menuItems: Array<string>}) => {
 };
 
 const StyledTabMenu = styled.nav`
-  margin-bottom: 50px;
+  //margin-bottom: 50px;
 
   ul {
   text-transform: lowercase;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
-    gap: 50px;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto 50px;
   }
 `
 

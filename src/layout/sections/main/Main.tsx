@@ -5,12 +5,13 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
 import {ButtonAccent} from "../../../components/ButtonAccent";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-between"}>
+                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
                     <AboutMe>
                         <span>Hello!👋🏻</span>
                         <Name>I'm <span>Jurij</span></Name>
@@ -29,11 +30,11 @@ export const Main = () => {
 
 
 const AboutMe = styled.div`
-  font-size: 32px;
-  font-weight: 600;
-  ${ButtonAccent} {
-    margin: 60px 0 0;
-  }
+  ${font({family:"'Fira Code', sans-serif", weight: 600, FontMax: 32, FontMin: 20})};
+  
+  @media ${theme.media.tablet} {
+  margin: 40px 0;
+}
 `
 
 const PhotoContainer = styled.div`
@@ -50,9 +51,6 @@ const PhotoContainer = styled.div`
     background-color: ${theme.colors.primaryBg};
   }
   
-  &::before {
-    
-  }
 `
 
 const StyledMain = styled.section`
@@ -64,16 +62,24 @@ const Photo = styled.img`
   width: 430px;
   height: 560px;
   object-fit: cover;
+  
+  @media ${theme.media.mobile} {
+    width: 350px;
+    height: 460px;
+  }
 `
 
 const MainTitle = styled.h1`
-  font-size: 50px;
+  ${font({family:"'Fira Code', sans-serif", weight: 700, FontMax: 52, FontMin: 36})}
   background-image: linear-gradient(0deg, ${theme.colors.accent} 30%, ${theme.colors.primaryBg} 100%);
+  margin-bottom: 60px;
   color: transparent;
   -webkit-background-clip: text;
+  white-space: nowrap;
 `
 
 const Name = styled.h2`
+  ${font({family:"'Fira Code', sans-serif", weight: 700, FontMax: 52, FontMin: 36})}
   span {
     position: relative;
     z-index: 0;

@@ -11,7 +11,7 @@ export const Skills = () => {
         <StyledSkills>
             <Container>
                 <SectionTitle>skills</SectionTitle>
-                <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"flex-start"}>
+                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
                     <Skill title={"html5"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa"}/>
                     <Skill title={"css"}
@@ -31,5 +31,7 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-
+  ${FlexWrapper} {
+    gap: 20px;
+  }
 `

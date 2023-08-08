@@ -48,6 +48,10 @@ const StyledFooter = styled.footer`
   border-top: 1px solid ${theme.colors.accentSecondary};
   background-color: ${theme.colors.primaryBg};
   text-align: center;
+
+  ${FlexWrapper} {
+  gap: 10px;
+  }
 `
 
 const MainInfo = styled.div`
@@ -69,6 +73,8 @@ const Name = styled.span`
 
 const SocialList = styled.ul`
   text-align: left;
+  white-space: nowrap;
+  
   h3 {
     margin-left: 10px;
     margin-bottom: 5px;

@@ -23,9 +23,12 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-  margin: 0 0 30px;
-  width: 30%;
-  //padding: 15px 30px 30px;
+  ${FlexWrapper} {
+    gap: 0;
+  }
+  margin: 0 0 20px;
+  width: 300px;
+  flex-grow: 1;
   border: 1px solid ${theme.colors.accentSecondary};
 `
 
