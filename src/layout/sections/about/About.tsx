@@ -1,19 +1,18 @@
 import React from 'react';
-import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import photo from "../../../assets/images/image-about.png";
 import {ButtonAccent} from "../../../components/ButtonAccent";
-import {theme} from "../../../styles/Theme";
+import {S} from "./About_Styles"
 
-export const About = () => {
+export const About: React.FC = () => {
     return (
-        <StyledTestimony>
+        <S.About>
             <Container>
                 <SectionTitle>about me</SectionTitle>
                 <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
-                    <AboutMeText><p>Hello, i’m Jurij!</p>
+                    <S.AboutMeText><p>Hello, i’m Jurij!</p>
                         <br/>
                         <p>I’m a self-taught front-end developer based in Riga, Latvia. I can develop responsive
                             websites from scratch and raise them into modern user-friendly web experiences.
@@ -26,39 +25,13 @@ export const About = () => {
                             I have been helping various clients to establish their presence online. I always strive to
                             learn about the newest technologies and frameworks.</p>
                         <ButtonAccent>Read more --{'>'}</ButtonAccent>
-                    </AboutMeText>
-                    <PhotoContainer>
-                        <Photo src={photo} alt=""/>
-                    </PhotoContainer>
+                    </S.AboutMeText>
+                    <S.PhotoContainer>
+                        <S.Photo src={photo} alt=""/>
+                    </S.PhotoContainer>
                 </FlexWrapper>
             </Container>
-        </StyledTestimony>
+        </S.About>
     );
 };
 
-const StyledTestimony = styled.section`
-  ${FlexWrapper} {
-    gap: 20px;
-  }
-`
-
-const AboutMeText = styled.div`
-  width: 40%;
-  flex-grow: 1;
-  //align-self: flex-start;
-
-  ${ButtonAccent} {
-    margin: 60px 0 0;
-  }
-`
-
-const PhotoContainer = styled.div`
-  border-bottom: 1px solid ${theme.colors.accentSecondary};
-  @media ${theme.media.tablet} {
-    display: none;
-  }
-`
-
-const Photo = styled.img`
-  width: 400px;
-`

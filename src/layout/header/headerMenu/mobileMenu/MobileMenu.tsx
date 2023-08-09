@@ -6,11 +6,11 @@ import {S} from "../HeaderMenu_Styles"
 export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
     return (
         <S.MobileMenu>
-            <S.BurgerButton isOpen={true}>
+            <S.BurgerButton isOpen={false}>
                 <span></span>
             </S.BurgerButton>
 
-            <S.MobileMenuPopup isOpen={true}>
+            <S.MobileMenuPopup isOpen={false}>
                 <div>
                     <Logo/>
                 </div>
