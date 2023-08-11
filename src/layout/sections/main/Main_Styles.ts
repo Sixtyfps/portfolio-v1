@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const AboutMe = styled.div`
   ${font({family:"'Fira Code', sans-serif", weight: 600, FontMax: 32, FontMin: 20})};
@@ -27,6 +28,11 @@ const PhotoContainer = styled.div`
 `
 
 const Main = styled.section`
+  ${FlexWrapper} {
+    @media ${theme.media.mobile} {
+      justify-content: space-around;
+    }
+  }
   min-height: 100vh;
   display: flex;
 `
@@ -43,7 +49,7 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-  ${font({family:"'Fira Code', sans-serif", weight: 700, FontMax: 52, FontMin: 36})}
+  ${font({family:"'Fira Code', sans-serif", weight: 700, FontMax: 46, FontMin: 36})}
   background-image: linear-gradient(0deg, ${theme.colors.accent} 30%, ${theme.colors.primaryBg} 100%);
   margin-bottom: 60px;
   color: transparent;
