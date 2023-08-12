@@ -11,15 +11,15 @@ import {S} from "./Works_Styles"
 
 const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
     {
-        title: "All",
+        title: "all",
         status: "all"
     },
     {
-        title: "landing page",
+        title: "landing",
         status: "landing"
     },
     {
-        title: "React",
+        title: "react",
         status: "react"
     },
     {
@@ -64,7 +64,7 @@ export const Works: React.FC = () => {
     }
 
     return (
-        <S.Works>
+        <S.Works id={"works"}>
             <Container>
                 <SectionTitle>works</SectionTitle>
                 <TabMenu tabsItems={tabsItems}

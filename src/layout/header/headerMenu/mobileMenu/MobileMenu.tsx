@@ -3,7 +3,7 @@ import {Logo} from "../../../../components/logo/Logo";
 import {Menu} from "../menu/Menu";
 import {S} from "../HeaderMenu_Styles"
 
-export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
+export const MobileMenu: React.FC = () => {
     const [menuIsOpen, setmenuIsOpen] = useState(false)
     const onBurgerBtnClick = () => { setmenuIsOpen( !menuIsOpen ) }
     return (
@@ -16,7 +16,7 @@ export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menu
                 <div>
                     <Logo/>
                 </div>
-                <Menu menuItems={props.menuItems}/>
+                <Menu />
             </S.MobileMenuPopup>
 
         </S.MobileMenu>

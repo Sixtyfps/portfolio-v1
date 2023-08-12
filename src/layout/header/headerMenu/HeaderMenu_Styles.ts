@@ -1,17 +1,12 @@
 import {theme} from "../../../styles/Theme";
 import styled, {css} from "styled-components";
+import {Link} from "react-scroll";
 
 
 //Menu Common Styles
-const Link = styled.a`
-  font-size: 20px;
-  font-weight: 500;
-  color: transparent;
-  &::before {
-    content: "#";
-    color: ${theme.colors.accent};
-    
-  }
+
+const MenuItem = styled.li`
+  position: relative;
 `
 
 const Mask = styled.span`
@@ -22,6 +17,7 @@ const Mask = styled.span`
   height: 50%;
   overflow: hidden;
   color: ${theme.colors.font};
+  transition: ${theme.animations.transition};
   
   & + & {
     top: 50%;
@@ -32,36 +28,46 @@ const Mask = styled.span`
   }
 `
 
-const MenuItem = styled.li`
-  position: relative;
-  
-  &::before {
-    content: "";
-    display: inline-block;
-    height: 1px;
-    background-color: ${theme.colors.accent};
-    position: absolute;
-    top:50%;
-    left: 15px;
-    right: -5px;
-    z-index: 1;
-    transform: scale(0);
-  }
-  
+const NavLink = styled(Link)`
+  font-size: 24px;
+  font-weight: 500;
+  color: transparent;
   &:hover {
+    cursor: pointer;
+  }
+  &::before {
+    content: "#";
+    color: ${theme.colors.accent};
+  }
+  // &::after {
+  //   content: "";
+  //   display: inline-block;
+  //   height: 1px;
+  //   background-color: ${theme.colors.accent};
+  //   position: absolute;
+  //   top:50%;
+  //   left: 15px;
+  //   right: -5px;
+  //   z-index: 1;
+  //   transform: scale(0);
+  // }
+  &:hover, &.active {
+    //&::after{
+    //  transform: scale(1);
+    //}
+
     &::before{
-      transform: scale(1);
+      color: ${theme.colors.font};
     }
     
     ${Mask} {
       transform: skewX(15deg);
-      color: ${theme.colors.font};
-      
+      color: ${theme.colors.accent};
+
       & + ${Mask} {
         transform: skewX(15deg);
       }
     }
-    
   }
 `
 
@@ -82,13 +88,15 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   bottom: 0;
   z-index: 99999;
   background-color: ${theme.colors.primaryBg};
-  display: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-100%);
+  transition: ${theme.animations.burgerTransition};
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    transform: translateY(0);
   `}
   
   ul {
@@ -99,7 +107,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     gap: 40px;
 
     ${MenuItem} {
-      ${Link} {
+      ${NavLink} {
         font-size: 36px;
 
         &::before {
@@ -130,7 +138,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     position: absolute;
     left: 40px;
     bottom: 65px;
-
+    transition: ${theme.animations.burgerTransition};
+    
     ${props => props.isOpen && css<{ isOpen: boolean }>`
       background-color: rgba(255, 255, 255, 0);
     `}
@@ -142,7 +151,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       background-color: ${theme.colors.accentSecondary};
       position: absolute;
       transform: translateY(-10px);
-
+      transition: ${theme.animations.burgerTransition};
+      
       ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform: rotate(-45deg) translateY(0);
       `}
@@ -156,7 +166,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       background-color: ${theme.colors.accentSecondary};
       position: absolute;
       transform: translateY(10px);
-
+      transition: ${theme.animations.burgerTransition};
+      
       ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform: rotate(45deg) translateY(0);
         width: 36px;
@@ -177,7 +188,7 @@ const DesktopMenu = styled.nav`
 `
 
 export const S = {
-    Link,
+    NavLink,
     MenuItem,
     Mask,
     MobileMenu,

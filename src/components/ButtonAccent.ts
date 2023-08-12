@@ -10,6 +10,7 @@ export const ButtonAccent = styled.button`
   white-space: nowrap;
   //text-transform: uppercase;
   border: 1px solid ${theme.colors.accent};
+  transition: ${theme.animations.transition};
   
   :hover {
     background: rgba(199, 120, 221, 0.20);;

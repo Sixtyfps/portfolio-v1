@@ -8,7 +8,7 @@ import {S} from "./Header_Styles";
 
 
 
-const items = ["home", "skills", "works", "about", "contact"]
+
 
 export const Header: React.FC = () => {
 
@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
                         <Logo/>
                     </S.LogoWrapper>
 
-                    {width < breakpoint ? <MobileMenu menuItems={items}/> : <DesktopMenu menuItems={items}/>}
+                    {width < breakpoint ? <MobileMenu /> : <DesktopMenu />}
 
 
                 </FlexWrapper>

@@ -22,6 +22,7 @@ const Contact = styled.a`
   margin: 5px 0;
   display: flex;
   align-items: center;
+  transition: ${theme.animations.transition};
   
   &:hover {
     color: ${theme.colors.accent};

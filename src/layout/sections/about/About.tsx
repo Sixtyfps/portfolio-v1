@@ -8,7 +8,7 @@ import {S} from "./About_Styles"
 
 export const About: React.FC = () => {
     return (
-        <S.About>
+        <S.About id={"about"}>
             <Container>
                 <SectionTitle>about me</SectionTitle>
                 <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>

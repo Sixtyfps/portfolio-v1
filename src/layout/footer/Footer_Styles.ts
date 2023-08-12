@@ -51,10 +51,10 @@ const SocialItem = styled.li`
 
 const SocialLink = styled.a`
   color: ${theme.colors.accentSecondary};
-  
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ${theme.animations.transition};
   
   &:hover {
     transform: translateY(-4px);
