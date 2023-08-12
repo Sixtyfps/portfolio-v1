@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {theme} from "../../../styles/Theme";
 
 const Skills = styled.section`
+  position: relative;
   ${FlexWrapper} {
     gap: 20px;
   }

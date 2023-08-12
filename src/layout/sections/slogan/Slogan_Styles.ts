@@ -3,6 +3,7 @@ import {theme} from "../../../styles/Theme";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const Slogan = styled.section`
+  position: relative;
   ${FlexWrapper} {
     gap: 20px;
   }

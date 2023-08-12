@@ -19,6 +19,7 @@ const AboutMeText = styled.div`
 `
 
 const PhotoContainer = styled.div`
+  position: relative;
   border-bottom: 1px solid ${theme.colors.accentSecondary};
   @media ${theme.media.tablet} {
     display: none;

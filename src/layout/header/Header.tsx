@@ -4,7 +4,9 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
-import {S} from "./Header_Styles"
+import {S} from "./Header_Styles";
+
+
 
 const items = ["home", "skills", "works", "about", "contact"]
 

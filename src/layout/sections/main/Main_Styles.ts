@@ -58,6 +58,7 @@ const MainTitle = styled.h1`
 `
 
 const Name = styled.h2`
+  margin: 10px 0;
   ${font({family:"'Fira Code', sans-serif", weight: 700, FontMax: 52, FontMin: 36})}
   span {
     position: relative;
