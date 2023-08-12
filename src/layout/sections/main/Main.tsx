@@ -5,7 +5,6 @@ import {Container} from "../../../components/Container";
 import {ButtonAccent} from "../../../components/ButtonAccent";
 import {S} from "./Main_Styles";
 import Typewriter from 'typewriter-effect';
-import Tilt from 'react-parallax-tilt';
 
 
 export const Main: React.FC = () => {
@@ -13,7 +12,7 @@ export const Main: React.FC = () => {
         <S.Main id={"home"}>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
-                    <Tilt>
+
                         <S.AboutMe>
                             {/*<span>Hello!👋🏻</span>*/}
                             <span>
@@ -30,7 +29,6 @@ export const Main: React.FC = () => {
                             <ButtonAccent>Contact me!</ButtonAccent>
 
                         </S.AboutMe>
-                    </Tilt>
 
                     <S.PhotoContainer>
                         <S.Photo src={photo} alt=""/>
