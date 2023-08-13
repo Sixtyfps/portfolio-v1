@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const AboutMe = styled.div`
   ${font({family:"'Fira Code', sans-serif", weight: 600, FontMax: 32, FontMin: 20})};
+  position: relative;
   
   @media ${theme.media.tablet} {
   margin: 40px 0;

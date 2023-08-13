@@ -44,11 +44,10 @@ export const Skills: React.FC = () => {
             <Container>
                 <SectionTitle>skills</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-
-                    {skillData.map((s, index)=> {
-                        return <Skill title={s.title} key = {index}
-                                      description={s.description}/>
-                    })}
+                        {skillData.map((s, index) => {
+                            return <Skill title={s.title} key={index}
+                                          description={s.description}/>
+                        })}
                 </FlexWrapper>
             </Container>
         </S.Skills>

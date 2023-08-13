@@ -12,17 +12,16 @@ const Works = styled.section`
 
 const Work = styled.div`
   background-color: ${theme.colors.primaryBg};
-  
-  width: 330px;
-  flex-grow: 1;
+  //width: 330px;
+  //flex-grow: 1;
 
   Button + Button {
     margin-left: 20px;
   }
   
-  @media ${theme.media.desktop} {
-    max-width: 540px;
-  }
+  // @media ${theme.media.desktop} {
+  //   max-width: 540px;
+  // }
 `
 
 const ImageWrapper = styled.div`
