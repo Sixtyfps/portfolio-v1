@@ -26,7 +26,7 @@ const Contact = styled.a`
   
   &:hover {
     color: ${theme.colors.accent};
-    transform: translateY(-4px);
+    transform: translateX(-4px);
   }
 `
 
@@ -37,7 +37,6 @@ const ContactBox = styled.div`
   @media ${theme.media.tablet} {
     flex-grow: 1; 
   }
-  
 `
 
 const IconText = styled.p`
