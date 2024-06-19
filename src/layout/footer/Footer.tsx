@@ -7,15 +7,16 @@ import {S} from "./Footer_Styles";
 const socialItemsData = [
     {
         iconId: "Github",
-        href: "#"
+        href: "https://github.com/Sixtyfps",
     },
     {
         iconId: "Linkedin",
-        href: "#"
+        href: "https://www.linkedin.com/in/yury-k/"
     },
     {
-        iconId: "Dribble",
-        href: "#"
+        iconId: "Codewars",
+        href: "https://www.codewars.com/users/Jurij_K",
+        viewBoxValue:'-4 -4 30 30'
     }
 ]
 
@@ -27,7 +28,7 @@ export const Footer: React.FC = () => {
                     <S.MainInfo>
                         <Icon width={"16"} height={"16"} viewBox={"0 0 16 16"} iconId={'logoHeader'}/>
                         <S.Name>Jurij</S.Name>
-                        <S.Description>Web designer and front-end developer</S.Description>
+                        <S.Description>Software engineer and front-end developer</S.Description>
                     </S.MainInfo>
 
                     <S.SocialList>
@@ -36,8 +37,8 @@ export const Footer: React.FC = () => {
                         {socialItemsData.map((s, index) => {
                             return (
                                 <S.SocialItem key={index}>
-                                    <S.SocialLink href={s.href}>
-                                        <Icon width={"30"} height={"30"} viewBox={"0 0 30 30"} iconId={s.iconId}/>
+                                    <S.SocialLink target="_blank" href={s.href}>
+                                        <Icon width={"30"} height={"30"} viewBox={s.viewBoxValue ?? "0 0 30 30"} iconId={s.iconId}/>
                                     </S.SocialLink>
                                 </S.SocialItem>
                             )
@@ -45,7 +46,7 @@ export const Footer: React.FC = () => {
 
                     </S.SocialList>
                 </FlexWrapper>
-                <S.Copyright>© 2023 Jurij, All Rights Reserved.</S.Copyright>
+                <S.Copyright>© 2024 Jurij, All Rights Reserved.</S.Copyright>
             </Container>
 
         </S.Footer>

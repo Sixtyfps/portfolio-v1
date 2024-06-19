@@ -27,7 +27,7 @@ export const About: React.FC = () => {
                         {/*<ButtonAccent>Read more --{'>'}</ButtonAccent>*/}
                     </S.AboutMeText>
                     <S.PhotoContainer>
-                        <S.Photo src={photo} alt=""/>
+                        {/*<S.Photo src={photo} alt=""/>*/}
                     </S.PhotoContainer>
                 </FlexWrapper>
             </Container>
