@@ -36,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   section {
-    padding: 80px 0;
+    padding: 90px 0;
     background-color: ${theme.colors.primaryBg};
 
     @media ${theme.media.mobile} {

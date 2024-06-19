@@ -24,7 +24,7 @@ export const About: React.FC = () => {
                         <p>Transforming my creativity and knowledge into a websites has been my passion for over a year.
                             I have been helping various clients to establish their presence online. I always strive to
                             learn about the newest technologies and frameworks.</p>
-                        <ButtonAccent>Read more --{'>'}</ButtonAccent>
+                        {/*<ButtonAccent>Read more --{'>'}</ButtonAccent>*/}
                     </S.AboutMeText>
                     <S.PhotoContainer>
                         <S.Photo src={photo} alt=""/>

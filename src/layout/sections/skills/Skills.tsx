@@ -12,7 +12,7 @@ const skillData = [
     },
     {
         title: "css3",
-        description: "CSS3 is the latest version of the CSS (Cascading Style Sheets) language used for styling web pages. It introduces new features and capabilities that allow for the creation of more visually appealing, responsive, and interactive websites",
+        description: "The latest version of the CSS (Cascading Style Sheets) language used for styling web pages. It introduces new features and capabilities that allow for the creation of more visually appealing, responsive, and interactive websites",
 
     },
     {
