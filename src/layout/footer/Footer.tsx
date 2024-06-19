@@ -16,7 +16,7 @@ const socialItemsData = [
     {
         iconId: "Codewars",
         href: "https://www.codewars.com/users/Jurij_K",
-        viewBoxValue:'-4 -4 30 30'
+        viewBoxValue:'-6 -4 30 30'
     }
 ]
 

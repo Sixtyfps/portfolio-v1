@@ -16,15 +16,15 @@ export const Slogan: React.FC = () => {
                     </S.Description>
                     <S.ContactBox>
                         <h3>Message me here</h3>
-                        <S.Contact href={"#"}>
+                        <S.Contact target="_blank" href={"mailto:viletert@gmail.com"}>
                             <Icon width={"30"} height={"30"} viewBox={"0 0 30 30"} iconId={"Email"}/>
-                            <S.IconText>34411ds@gmail.com</S.IconText>
+                            <S.IconText>viletert@gmail.com</S.IconText>
                         </S.Contact>
-                        <S.Contact href={"#"}>
+                        <S.Contact target="_blank" href={"https://www.linkedin.com/in/yury-k/"}>
                             <Icon width={"30"} height={"30"} viewBox={"0 0 30 30"} iconId={"Linkedin"}/>
                             <S.IconText>Linkedin</S.IconText>
                         </S.Contact>
-                        <S.Contact href={"#"}>
+                        <S.Contact target="_blank" href={"https://telegram.me/cataminum"}>
                             <Icon width={"30"} height={"30"} viewBox={"0 0 30 30"} iconId={"Telegram"}/>
                             <S.IconText>Telegram</S.IconText>
                         </S.Contact>
