@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {theme} from "../../../styles/Theme";
 
+
 const Skills = styled.section`
   position: relative;
   ${FlexWrapper} {
@@ -25,8 +26,12 @@ const SkillTitleContainer = styled.div`
 `
 
 const SkillTitle = styled.h3`
-  padding: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
 `
+
 const SkillText = styled.p`
   padding: 8px;
 `
