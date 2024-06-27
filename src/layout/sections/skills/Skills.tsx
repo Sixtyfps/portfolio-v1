@@ -12,6 +12,7 @@ import {TypescriptlIcon} from "../../../components/svgComponents/TypescriptlIcon
 import {StorybookIcon} from "../../../components/svgComponents/StorybookIcon";
 import {StyledcomponentsIcon} from "../../../components/svgComponents/StyledcomponentsIcon";
 import {ReduxIcon} from "../../../components/svgComponents/ReduxIcon";
+import {GitIcon} from "../../../components/svgComponents/GitIcon";
 
 const skillData = [
     {
@@ -62,7 +63,12 @@ const skillData = [
         description: "Redux is a predictable state management library for JavaScript applications, commonly used with React but also compatible with other frameworks and libraries. Its principles of a single source of truth, predictable state changes, and action-based updates make it an essential tool for building complex, maintainable, and testable applications.",
 
     },
+    {
+        iconComponent: <GitIcon/>,
+        title: "Git",
+        description: "Git is a distributed version control system that tracks changes in source code during software development. It allows multiple developers to work on a project simultaneously, merging their contributions seamlessly. Git also provides tools for collaboration, history tracking, and version management, ensuring a robust and efficient workflow",
 
+    },
 
 ]
 
