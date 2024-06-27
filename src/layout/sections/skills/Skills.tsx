@@ -18,21 +18,21 @@ const skillData = [
     {
         iconComponent: <HtmlIcon/>,
         title: "html5",
-        description: "HTML markup language used for web pages and applications development. " +
+        description: "HTML is a technology used for web pages and applications development. " +
             "It includes new elements and attributes that enable the development of more semantic, accessible, " +
             "and interactive websites"
     },
     {
         iconComponent: <CssIcon/>,
         title: "css3",
-        description: "Cascading Style Sheets language used for styling web pages. " +
+        description: "Cascading Style Sheets is a technology used for styling web pages. " +
             "It introduces new features and capabilities that allow for the creation of more visually appealing, " +
             "responsive, and interactive websites"
     },
     {
         iconComponent: <JavascriptlIcon/>,
         title: "JavaScript",
-        description: "Versatile, high-level programming language that is primarily used to create interactive and " +
+        description: "JavaScript is a versatile, high-level programming language that is primarily used to create interactive and " +
             "dynamic content on the web. It is an essential part of modern web development, enabling developers to " +
             "build feature-rich, responsive websites and applications"
     },
@@ -40,21 +40,21 @@ const skillData = [
         iconComponent: <ReactlIcon/>,
         title: "React",
         description: "\n" +
-            "One of the most popular JavaScript libraries for building user interfaces, particularly for single-page " +
+            "React is one of the most popular JavaScript libraries for building user interfaces, particularly for single-page " +
             "applications where efficient, fast rendering of dynamic content is required. It allows developers to " +
             "create large web applications that can update and render efficiently in response to data changes"
     },
     {
         iconComponent: <TypescriptlIcon/>,
         title: "TypeScript",
-        description: "Statically typed superset of JavaScript that introduces static type definitions to the language. " +
+        description: "TypeScript is a statically typed superset of JavaScript that introduces static type definitions to the language. " +
             "By providing type checking at compile time, TypeScript helps developers identify and correct errors early " +
             "in the development process."
     },
     {
         iconComponent: <StyledcomponentsIcon/>,
         title: "styled components",
-        description: "React and React Native library that allows developers to use component-level styles in their " +
+        description: "Styled components is React and React Native library that allows developers to use component-level styles in their " +
             "applications. By leveraging tagged template literals, it enables writing CSS directly within JavaScript, " +
             "promoting a seamless integration of styles and logic"
     },
