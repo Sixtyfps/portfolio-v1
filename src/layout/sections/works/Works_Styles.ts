@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Button} from "../../../components/Button";
+import {LinkButton} from "../../../components/LinkButton";
 import {theme} from "../../../styles/Theme";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
@@ -12,20 +13,28 @@ const Works = styled.section`
 
 const Work = styled.div`
   background-color: ${theme.colors.primaryBg};
-  //width: 330px;
-  //flex-grow: 1;
 
   Button + Button {
     margin-left: 20px;
   }
-  
-  // @media ${theme.media.desktop} {
-  //   max-width: 540px;
-  // }
+    
+`
+
+const ButtonContainer = styled.div`
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
 `
 
 const ImageWrapper = styled.div`
   position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   ${Button} {
     opacity: 0;
@@ -34,7 +43,8 @@ const ImageWrapper = styled.div`
     top: 50%;
     transform: translate(-50%, -30%);
     transition: ${theme.animations.transition};
-  }
+  
+    }
 
   &::before {
     content: "";
@@ -48,22 +58,23 @@ const ImageWrapper = styled.div`
     opacity: 0;
     transition: ${theme.animations.transition};
   }
-
+    
+  &:hover::before {
+      opacity: 1;
+      transition: ${theme.animations.transition};
+    }
+   
   &:hover {
-    &::before {
-      opacity: 1;
+    ${ButtonContainer} {
+        opacity: 1;
+        transform: translate(-50%, -50%);
     }
-
-    ${Button} {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-    }
+}
+    
   }
 
+
   @media ${theme.media.tablet} {
-    &::before {
-      opacity: 1;
-    }
 
     ${Button} {
       opacity: 1;
@@ -79,7 +90,7 @@ const Image = styled.img`
 `
 
 const Description = styled.div`
-  padding: 25px 20px;
+  padding: 25px 0;
 `
 
 const Title = styled.h3`
@@ -97,5 +108,6 @@ export const S = {
     Image,
     Description,
     Title,
-    Text
+    Text,
+    ButtonContainer
 }

@@ -31,32 +31,40 @@ const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
 
 const worksData = [
     {
-        title: "Social Network",
+        title: "Portfolio",
         src: socialImg,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
+        text: "Exact that webpage you are currently on (:",
         type: "spa",
-        id: 1
+        id: 1,
+        codeLink: "https://www.google.com/",
+        demoLink: "https://www.google.com/"
     },
     {
         title: "Todo List",
         src: todoImg,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
         type: "react",
-        id: 2
+        id: 2,
+        codeLink: "",
+        demoLink: ""
     },
     {
-        title: "Social Network",
+        title: "Codewars",
         src: socialImg,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
         type: "spa",
-        id: 3
+        id: 3,
+        codeLink: "",
+        demoLink: ""
     },
     {
-        title: "Todo List",
+        title: "Counter",
         src: todoImg,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
         type: "react",
-        id: 4
+        id: 4,
+        codeLink: "",
+        demoLink: ""
     }
 ]
 
@@ -100,6 +108,8 @@ export const Works: React.FC = () => {
                                           src={w.src}
                                           text={w.text}
                                           key={w.id}
+                                          codeLink={w.codeLink}
+                                          demoLink={w.demoLink}
                                     />
                                 </motion.div>
                             )
