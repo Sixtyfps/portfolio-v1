@@ -37,7 +37,7 @@ export const Main: React.FC = () => {
                     </S.AboutMe>
 
                     <S.PhotoContainer>
-                        {/*<S.Photo src={photo} alt=""/>*/}
+                    {/*    /!*<S.Photo src={photo} alt=""/>*!/*/}
                     </S.PhotoContainer>
 
                 </FlexWrapper>

@@ -3,8 +3,8 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
-import socialImg from "./../../../assets/images/proj1.png"
-import todoImg from "./../../../assets/images/proj2.png"
+import portfolio from "./../../../assets/images/portfolio_jk.jpg"
+import counter_v1 from "./../../../assets/images/counter1.jpg"
 import {Container} from "../../../components/Container";
 import {S} from "./Works_Styles"
 import {AnimatePresence, motion} from "framer-motion"
@@ -32,16 +32,16 @@ const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
 const worksData = [
     {
         title: "Portfolio",
-        src: socialImg,
+        src: portfolio,
         text: "Exact that webpage you are currently on (:",
         type: "spa",
         id: 1,
-        codeLink: "https://www.google.com/",
-        demoLink: "https://www.google.com/"
+        codeLink: "https://github.com/Sixtyfps/portfolio-v1",
+        demoLink: "https://portfolio-v1-9cv3-sixtyfps-projects.vercel.app/"
     },
     {
         title: "Todo List",
-        src: todoImg,
+        src: counter_v1,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
         type: "react",
         id: 2,
@@ -50,7 +50,7 @@ const worksData = [
     },
     {
         title: "Codewars",
-        src: socialImg,
+        src: counter_v1,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
         type: "spa",
         id: 3,
@@ -59,7 +59,7 @@ const worksData = [
     },
     {
         title: "Counter",
-        src: todoImg,
+        src: counter_v1,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
         type: "react",
         id: 4,
