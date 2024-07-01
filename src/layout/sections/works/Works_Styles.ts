@@ -31,56 +31,61 @@ const ButtonContainer = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  position: relative;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 
-  ${Button} {
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -30%);
-    transition: ${theme.animations.transition};
-  
+    ${Button} {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -30%);
+        transition: ${theme.animations.transition};
+
     }
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .3);
-    backdrop-filter: blur(5px);
-    opacity: 0;
-    transition: ${theme.animations.transition};
-  }
-    
-  &:hover::before {
-      opacity: 1;
-      transition: ${theme.animations.transition};
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .3);
+        backdrop-filter: blur(10px);
+        opacity: 0;
+        transition: ${theme.animations.transition};
     }
-   
-  &:hover {
-    ${ButtonContainer} {
+
+    &:hover::before {
         opacity: 1;
-        transform: translate(-50%, -50%);
+        transition: ${theme.animations.transition};
     }
+
+    &:hover {
+        ${LinkButton} {
+            color: ${theme.colors.accent};
+            border-color: ${theme.colors.accent};
+        }
+
+        ${ButtonContainer} {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+
 }
-    
-  }
 
 
-  @media ${theme.media.tablet} {
+@media ${theme.media.tablet} {
 
     ${Button} {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
+}
+
 `
 
 const Image = styled.img`
