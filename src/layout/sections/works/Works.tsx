@@ -51,9 +51,9 @@ const worksData = [
         demoLink: "https://github.com/Sixtyfps/codewars/tree/master"
     },
     {
-        title: "Todo List",
+        title: "Todolist",
         src: todolist,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
+        text: "A complex todolist application that provides ability to add/rename/remove tasks and todolists, filter tasks inside todolists. This single page application includes a backend, error handling and user login functionality",
         type: "react",
         id: 2,
         codeLink: "",
@@ -62,7 +62,7 @@ const worksData = [
     {
         title: "Counter",
         src: counter_v1,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
+        text: "Application-counter with a minimalist design and functionality. It features configurable maximum and minimum values and error handling",
         type: "react",
         id: 4,
         codeLink: "",
