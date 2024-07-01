@@ -106,6 +106,15 @@ const Text = styled.p`
   margin: 14px 0 10px;
 `
 
+const StackTitle = styled.p`
+    font-weight: bold;
+`
+
+const TechnologyName = styled.p`
+    display: inline-block;
+    padding-right: 10px;
+`
+
 export const S = {
     Works,
     Work,
@@ -114,5 +123,7 @@ export const S = {
     Description,
     Title,
     Text,
-    ButtonContainer
+    ButtonContainer,
+    StackTitle,
+    TechnologyName
 }

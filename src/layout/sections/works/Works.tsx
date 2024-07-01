@@ -39,7 +39,8 @@ const worksData = [
         type: "landing",
         id: 1,
         codeLink: "https://github.com/Sixtyfps/portfolio-v1",
-        demoLink: "https://portfolio-v1-9cv3-sixtyfps-projects.vercel.app/"
+        demoLink: "https://portfolio-v1-9cv3-sixtyfps-projects.vercel.app/",
+        stack: ["React", "TypeScript", "styled components"]
     },
     {
         title: "Codewars",
@@ -48,7 +49,8 @@ const worksData = [
         type: "js",
         id: 3,
         codeLink: "https://github.com/Sixtyfps/codewars/blob/master/codewars.html",
-        demoLink: "https://github.com/Sixtyfps/codewars/tree/master"
+        demoLink: "https://github.com/Sixtyfps/codewars/tree/master",
+        stack: ["React", " TypeScript", "styled components"]
     },
     {
         title: "Todolist",
@@ -57,16 +59,18 @@ const worksData = [
         type: "react",
         id: 2,
         codeLink: "",
-        demoLink: ""
+        demoLink: "",
+        stack: ["React", "TypeScript", "styled components"]
     },
     {
         title: "Counter",
         src: counter_v1,
-        text: "Application-counter with a minimalist design and functionality. It features configurable maximum and minimum values and error handling",
+        text: "Application-counter with a minimalistic design and functionality. It features configurable maximum and minimum values and error handling",
         type: "react",
         id: 4,
         codeLink: "",
-        demoLink: ""
+        demoLink: "",
+        stack: ["React", "TypeScript", "styled components"]
     }
 ]
 
@@ -112,6 +116,7 @@ export const Works: React.FC = () => {
                                           key={w.id}
                                           codeLink={w.codeLink}
                                           demoLink={w.demoLink}
+                                          stack={w.stack}
                                     />
                                 </motion.div>
                             )
