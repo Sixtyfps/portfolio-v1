@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Link} from "../../../../components/Link";
 import {theme} from "../../../../styles/Theme";
 
-export type TabsStatusType = "all" | "landing" | "react" | "spa";
+export type TabsStatusType = "all" | "landing" | "react" | "js";
 
 type TabMenuPropsType = {
     tabsItems: Array<{status: TabsStatusType,title: string}>

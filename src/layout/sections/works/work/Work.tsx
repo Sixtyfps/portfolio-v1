@@ -1,6 +1,5 @@
 import React from 'react';
 import {LinkButton} from "../../../../components/LinkButton";
-import {Button} from "../../../../components/Button";
 import {S} from "./../Works_Styles"
 
 

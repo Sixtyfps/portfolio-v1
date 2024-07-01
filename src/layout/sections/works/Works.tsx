@@ -5,6 +5,8 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import portfolio from "./../../../assets/images/portfolio_jk.jpg"
 import counter_v1 from "./../../../assets/images/counter1.jpg"
+import codewars from "./../../../assets/images/codewars.jpg"
+import todolist from "./../../../assets/images/todolist.jpg"
 import {Container} from "../../../components/Container";
 import {S} from "./Works_Styles"
 import {AnimatePresence, motion} from "framer-motion"
@@ -23,8 +25,8 @@ const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
         status: "react"
     },
     {
-        title: "spa",
-        status: "spa"
+        title: "js",
+        status: "js"
     }
 ]
 
@@ -33,27 +35,27 @@ const worksData = [
     {
         title: "Portfolio",
         src: portfolio,
-        text: "Exact that webpage you are currently on (:",
-        type: "spa",
+        text: "My personal portfolio page, created to improve my skills in web development and single-page application design, features details about my professional skills and abilities",
+        type: "landing",
         id: 1,
         codeLink: "https://github.com/Sixtyfps/portfolio-v1",
         demoLink: "https://portfolio-v1-9cv3-sixtyfps-projects.vercel.app/"
     },
     {
+        title: "Codewars",
+        src: codewars,
+        text: "As I continuously improve my programming skills and algorithm-solving abilities, the list of solved problems grows every day. Currently, I am in the top 1% of users by honor level, with about 700 solved problems",
+        type: "js",
+        id: 3,
+        codeLink: "https://github.com/Sixtyfps/codewars/blob/master/codewars.html",
+        demoLink: "https://github.com/Sixtyfps/codewars/tree/master"
+    },
+    {
         title: "Todo List",
-        src: counter_v1,
+        src: todolist,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
         type: "react",
         id: 2,
-        codeLink: "",
-        demoLink: ""
-    },
-    {
-        title: "Codewars",
-        src: counter_v1,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugiat harum, nesciunt odio qui vitae?",
-        type: "spa",
-        id: 3,
         codeLink: "",
         demoLink: ""
     },
@@ -78,8 +80,8 @@ export const Works: React.FC = () => {
     if (currentFilterStatus === "react") {
         filteredWorks = worksData.filter(work => work.type === "react")
     }
-    if (currentFilterStatus === "spa") {
-        filteredWorks = worksData.filter(work => work.type === "spa")
+    if (currentFilterStatus === "js") {
+        filteredWorks = worksData.filter(work => work.type === "js")
     }
 
     function changeFilterStatus(value: TabsStatusType) {
