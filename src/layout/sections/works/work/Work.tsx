@@ -9,7 +9,7 @@ type WorkPropsType = {
     src: string
     codeLink: string
     demoLink: string
-    stack: Array<string>
+    stack: string
 }
 
 export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
@@ -27,9 +27,7 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
                 <S.Title>{props.title}</S.Title>
                 <S.Text>{props.text}</S.Text>
                 {/*<LinkButton href={props.demoLink} target="_blank">Demo</LinkButton>*/}
-                <S.Text><S.StackTitle>Stack:</S.StackTitle>{props.stack.map((el) => {
-                    return (<S.TechnologyName>{el}</S.TechnologyName>)
-                })}</S.Text>
+                <S.Text><S.StackTitle>Stack:</S.StackTitle>{props.stack}</S.Text>
                 <LinkButton href={props.codeLink} target="_blank">view code</LinkButton>
             </S.Description>
 

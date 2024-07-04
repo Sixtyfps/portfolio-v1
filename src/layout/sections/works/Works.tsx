@@ -40,27 +40,27 @@ const worksData = [
         id: 1,
         codeLink: "https://github.com/Sixtyfps/portfolio-v1",
         demoLink: "https://portfolio-v1-9cv3-sixtyfps-projects.vercel.app/",
-        stack: ["React", "TypeScript", "styled components"]
+        stack: "React, TypeScript, styled components"
     },
     {
         title: "Codewars",
         src: codewars,
         text: "As I continuously improve my programming skills and algorithm-solving abilities, the list of solved problems grows every day. Currently, I am in the top 1% of users by honor level, with about 700 solved problems",
         type: "js",
-        id: 3,
+        id: 2,
         codeLink: "https://github.com/Sixtyfps/codewars/blob/master/codewars.html",
         demoLink: "https://github.com/Sixtyfps/codewars/tree/master",
-        stack: ["React", " TypeScript", "styled components"]
+        stack: "JavaScript"
     },
     {
         title: "Todolist",
         src: todolist,
-        text: "A complex todolist application that provides ability to add/rename/remove tasks and todolists, filter tasks inside todolists. This single page application includes a backend, error handling and user login functionality",
+        text: "A complex todolist application that provides ability to add/rename/remove tasks and todolists, filter tasks inside todolists. This single page application includes work with api, error handling and user login functionality",
         type: "react",
-        id: 2,
-        codeLink: "",
-        demoLink: "",
-        stack: ["React", "TypeScript", "styled components"]
+        id: 3,
+        codeLink: "https://github.com/Sixtyfps/todolist-rtk-main",
+        demoLink: "https://todolist-rtk-main.vercel.app/",
+        stack: "React, TypeScript, Redux Toolkit, Material UI"
     },
     {
         title: "Counter",
@@ -70,7 +70,7 @@ const worksData = [
         id: 4,
         codeLink: "",
         demoLink: "",
-        stack: ["React", "TypeScript", "styled components"]
+        stack: "React, TypeScript, styled components"
     }
 ]
 
