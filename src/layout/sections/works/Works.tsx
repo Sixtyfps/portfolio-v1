@@ -70,7 +70,17 @@ const worksData = [
         id: 4,
         codeLink: "",
         demoLink: "",
-        stack: "React, TypeScript, styled components"
+        stack: "React, TypeScript, CSS modules"
+    },
+    {
+        title: "Counter Redux",
+        src: counter_v1,
+        text: "Application-counter with a minimalistic design and functionality. It features configurable maximum and minimum values and error handling",
+        type: "react",
+        id: 4,
+        codeLink: "",
+        demoLink: "",
+        stack: "React, TypeScript, Redux"
     }
 ]
 
