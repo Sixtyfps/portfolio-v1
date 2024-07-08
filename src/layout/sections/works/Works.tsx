@@ -75,9 +75,9 @@ const worksData = [
     {
         title: "Counter Redux",
         src: counter_v1,
-        text: "Application-counter with a minimalistic design and functionality. It features configurable maximum and minimum values and error handling",
+        text: "The same application-counter as above but using Redux as a state manager",
         type: "react",
-        id: 4,
+        id: 5,
         codeLink: "",
         demoLink: "",
         stack: "React, TypeScript, Redux"
