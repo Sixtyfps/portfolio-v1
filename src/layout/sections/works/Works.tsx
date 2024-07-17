@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import portfolio from "./../../../assets/images/portfolio_jk.jpg"
 import counter_v1 from "./../../../assets/images/counter1.jpg"
+import counter_redux from "./../../../assets/images/counter_redux.jpg"
 import codewars from "./../../../assets/images/codewars.jpg"
 import todolist from "./../../../assets/images/todolist.jpg"
 import {Container} from "../../../components/Container";
@@ -74,8 +75,8 @@ const worksData = [
     },
     {
         title: "Counter Redux",
-        src: counter_v1,
-        text: "The same application-counter as above but using Redux as a state manager",
+        src: counter_redux,
+        text: "Application-counter with a minimalistic design and functionality. It features configurable maximum and minimum values and error handling. For state management is used Redux",
         type: "react",
         id: 5,
         codeLink: "https://github.com/Sixtyfps/counter_redux",
