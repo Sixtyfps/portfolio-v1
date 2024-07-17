@@ -69,8 +69,8 @@ const worksData = [
         text: "Application-counter with a minimalistic design and functionality. It features configurable maximum and minimum values and error handling",
         type: "react",
         id: 4,
-        codeLink: "",
-        demoLink: "",
+        codeLink: "https://github.com/Sixtyfps/counter_hw",
+        demoLink: "https://counter-hw.vercel.app/",
         stack: "React, TypeScript, CSS modules"
     },
     {
