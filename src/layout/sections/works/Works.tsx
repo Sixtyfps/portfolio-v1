@@ -78,9 +78,9 @@ const worksData = [
         text: "The same application-counter as above but using Redux as a state manager",
         type: "react",
         id: 5,
-        codeLink: "",
-        demoLink: "",
-        stack: "React, TypeScript, Redux"
+        codeLink: "https://github.com/Sixtyfps/counter_redux",
+        demoLink: "https://counter-redux-sand.vercel.app/",
+        stack: "React, TypeScript, Redux, CSS modules"
     }
 ]
 
