@@ -16,14 +16,13 @@ export const About: React.FC = () => {
                         <br/>
                         <p>I’m a self-taught front-end developer based in Riga, Latvia. I can develop responsive
                             websites from scratch and raise them into modern user-friendly web experiences.
-                            Transforming my creativity and knowledge into a websites has been my passion for over a
-                            year.
-                            I have been helping various clients to establish their presence online. I always strive to
-                            learn about the newest technologies and frameworks.</p>
+                            Transforming my creativity and knowledge into a websites is my true passion.
+                            I always strive to learn about the newest technologies and frameworks and continuously
+                            challenge myself by solving algorithmic problems to keep my skills sharp.</p>
                         <br/>
-                        <p>Transforming my creativity and knowledge into a websites has been my passion for over a year.
-                            I have been helping various clients to establish their presence online. I always strive to
-                            learn about the newest technologies and frameworks.</p>
+                        <p>Outside of work, I enjoy staying active, whether it's through physical exercises
+                            or taking walks in nature. I also have a passion for road trips, particularly to new and
+                            unexplored places, as they offer fresh perspectives and a mental refresh.</p>
                         {/*<ButtonAccent>Read more --{'>'}</ButtonAccent>*/}
                     </S.AboutMeText>
                     <S.PhotoContainer>
