@@ -18,6 +18,7 @@ export const Contact: React.FC = () => {
                 .then(
                     () => {
                         console.log('SUCCESS!');
+                        form.current?.reset();  // Reset the form after successful submission
                     },
                     (error) => {
                         console.log('FAILED...', error.text);
@@ -28,43 +29,43 @@ export const Contact: React.FC = () => {
 
     return (
         <S.Contact id="contact">
-            {/*<Container>*/}
-            {/*    <SectionTitle>contact</SectionTitle>*/}
-
-            {/*    <S.StyledForm ref={form} onSubmit={sendEmail}>*/}
-            {/*        <S.Label>Name</S.Label>*/}
-            {/*        <S.Input placeholder="" type="text" name="from_name" />*/}
-
-            {/*        <S.Label>Email</S.Label>*/}
-            {/*        <S.Input placeholder="" type="email" name="reply_to" />*/}
-
-            {/*        <S.Label>Message</S.Label>*/}
-            {/*        <S.Input placeholder="" as="textarea" name="message" />*/}
-
-            {/*        <Button type="submit" value="Send">Send message</Button>*/}
-            {/*    </S.StyledForm>*/}
-            {/*</Container>*/}
-
             <Container>
                 <SectionTitle>contact</SectionTitle>
+
                 <S.StyledForm ref={form} onSubmit={sendEmail}>
+                    <S.Label>Name</S.Label>
+                    <S.Input placeholder="" type="text" name="from_name" />
 
-                    <S.Label>
-                        <S.Input placeholder={""} type="text" name="from_name"/>
-                        <span>Name</span>
-                    </S.Label>
-                    <S.Label>
-                        <S.Input  placeholder="" type="email" name="reply_to"/>
-                        <span>Email</span>
-                    </S.Label>
-                    <S.Label>
-                        <S.Input  placeholder="" as="textarea" name="message" />
-                        <span>Message</span>
-                    </S.Label>
+                    <S.Label>Email</S.Label>
+                    <S.Input placeholder="" type="email" name="reply_to" />
 
-                    <Button type={"submit"}>Send message</Button>
+                    <S.Label>Message</S.Label>
+                    <S.Input placeholder="" as="textarea" name="message" />
+
+                    <Button type="submit" value="Send">Send message</Button>
                 </S.StyledForm>
             </Container>
+
+            {/*<Container>*/}
+            {/*    <SectionTitle>contact</SectionTitle>*/}
+            {/*    <S.StyledForm ref={form} onSubmit={sendEmail}>*/}
+
+            {/*        <S.Label>*/}
+            {/*            <S.Input placeholder={""} type="text" name="from_name"/>*/}
+            {/*            <span>Name</span>*/}
+            {/*        </S.Label>*/}
+            {/*        <S.Label>*/}
+            {/*            <S.Input  placeholder="" type="email" name="reply_to"/>*/}
+            {/*            <span>Email</span>*/}
+            {/*        </S.Label>*/}
+            {/*        <S.Label>*/}
+            {/*            <S.Input  placeholder="" as="textarea" name="message" />*/}
+            {/*            <span>Message</span>*/}
+            {/*        </S.Label>*/}
+
+            {/*        <Button type={"submit"}>Send message</Button>*/}
+            {/*    </S.StyledForm>*/}
+            {/*</Container>*/}
 
 
         </S.Contact>

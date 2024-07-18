@@ -18,7 +18,7 @@ const Label = styled.label`
     top:0;
     transition: 0.2s;
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-    opacity:0.5;
+    opacity:0.3;
   }
 `
 
@@ -29,7 +29,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   margin: 0 auto;
 
   textarea {
@@ -47,7 +47,7 @@ const Input = styled.input`
     color: ${theme.colors.font};
     background-color: ${theme.colors.primaryBg};
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     &::placeholder {
         background-color: ${theme.colors.primaryBg};
