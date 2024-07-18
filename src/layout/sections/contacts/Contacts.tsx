@@ -13,6 +13,18 @@ export const Contact: React.FC = () => {
         e.preventDefault();
 
         if (form.current) {
+
+            // Validate the form fields
+            const formData = new FormData(form.current);
+            const fromName = formData.get('from_name') as string;
+            const replyTo = formData.get('reply_to') as string;
+            const message = formData.get('message') as string;
+
+            if (!fromName || !replyTo || !message) {
+                console.log('All fields are required.');
+                return;
+            }
+
             emailjs
                 .sendForm('service_xjoxnmu', 'template_b6qllbh', form.current, 'Rd1hWf8Mx-3yKeQip')
                 .then(
@@ -45,29 +57,6 @@ export const Contact: React.FC = () => {
                     <Button type="submit" value="Send">Send message</Button>
                 </S.StyledForm>
             </Container>
-
-            {/*<Container>*/}
-            {/*    <SectionTitle>contact</SectionTitle>*/}
-            {/*    <S.StyledForm ref={form} onSubmit={sendEmail}>*/}
-
-            {/*        <S.Label>*/}
-            {/*            <S.Input placeholder={""} type="text" name="from_name"/>*/}
-            {/*            <span>Name</span>*/}
-            {/*        </S.Label>*/}
-            {/*        <S.Label>*/}
-            {/*            <S.Input  placeholder="" type="email" name="reply_to"/>*/}
-            {/*            <span>Email</span>*/}
-            {/*        </S.Label>*/}
-            {/*        <S.Label>*/}
-            {/*            <S.Input  placeholder="" as="textarea" name="message" />*/}
-            {/*            <span>Message</span>*/}
-            {/*        </S.Label>*/}
-
-            {/*        <Button type={"submit"}>Send message</Button>*/}
-            {/*    </S.StyledForm>*/}
-            {/*</Container>*/}
-
-
         </S.Contact>
     );
 };
