@@ -29,7 +29,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 10px;
   margin: 0 auto;
 
   textarea {
@@ -39,29 +39,30 @@ const StyledForm = styled.form`
 `
 
 const Input = styled.input`
-  display: inline-block;
-  font-family: Fira Code, sans-serif;
-  width: 100%;
-  padding: 8px;
-  border: 1px solid ${theme.colors.accentSecondary};
-  color: ${theme.colors.font};
-  background-color: ${theme.colors.primaryBg};
-  font-size: 16px;
-
-  &::placeholder {
+    display: inline-block;
+    font-family: Fira Code, sans-serif;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid ${theme.colors.accentSecondary};
+    color: ${theme.colors.font};
     background-color: ${theme.colors.primaryBg};
-    color: ${theme.colors.accentSecondary};
-    text-transform: capitalize;
-  }
+    font-size: 16px;
+    margin-bottom: 20px;
 
-  &:focus-visible {
-    outline: 1px solid ${theme.colors.font};
-  }
-  
-  &:focus + span{
-    opacity:1;
-    transform: translateY(-35px) translateX(-5px);
-  }
+    &::placeholder {
+        background-color: ${theme.colors.primaryBg};
+        color: ${theme.colors.accentSecondary};
+        text-transform: capitalize;
+    }
+
+    &:focus-visible {
+        outline: 1px solid ${theme.colors.font};
+    }
+
+    &:focus + span {
+        opacity: 1;
+        transform: translateY(-35px) translateX(-5px);
+    }
 `
 
 export const S = {
