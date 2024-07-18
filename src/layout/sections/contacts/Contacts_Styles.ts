@@ -38,7 +38,7 @@ const StyledForm = styled.form`
   }
 `
 
-const Field = styled.input`
+const Input = styled.input`
   display: inline-block;
   font-family: Fira Code, sans-serif;
   width: 100%;
@@ -68,5 +68,5 @@ export const S = {
     Contact,
     Label,
     StyledForm,
-    Field
+    Input
 }

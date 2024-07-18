@@ -12,15 +12,15 @@ export const Contact: React.FC = () => {
                 <S.StyledForm>
 
                     <S.Label>
-                        <S.Field placeholder={""}/>
+                        <S.Input placeholder={""}/>
                         <span>Name</span>
                     </S.Label>
                     <S.Label>
-                        <S.Field placeholder={""}/>
+                        <S.Input placeholder={""}/>
                         <span>Subject</span>
                     </S.Label>
                     <S.Label>
-                        <S.Field placeholder={""} as={"textarea"}/>
+                        <S.Input placeholder={""} as={"textarea"}/>
                         <span>Message</span>
                     </S.Label>
 

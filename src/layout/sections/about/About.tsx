@@ -17,7 +17,7 @@ export const About: React.FC = () => {
                         <p>I’m a self-taught front-end developer based in Riga, Latvia. I can develop responsive
                             websites from scratch and raise them into modern user-friendly web experiences.
                             Transforming my creativity and knowledge into a websites is my true passion.
-                            I always strive to learn about the newest technologies and frameworks and continuously
+                            I always strive to learn about the latest technologies and frameworks and continuously
                             challenge myself by solving algorithmic problems to keep my skills sharp.</p>
                         <br/>
                         <p>Outside of work, I enjoy staying active, whether it's through physical exercises
