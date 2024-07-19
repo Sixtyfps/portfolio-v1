@@ -36,7 +36,7 @@ const worksData = [
     {
         title: "Portfolio",
         src: portfolio,
-        text: "My personal portfolio page, created to improve my skills in web development and single-page application design, features details about my professional skills and abilities",
+        text: "My personal portfolio page, created to improve my skills in web development and single-page application design, contains details about my professional skills and abilities. As for functional features it contains fully responsive design with burger menu for mobile, my works filtering and contact form",
         type: "landing",
         id: 1,
         codeLink: "https://github.com/Sixtyfps/portfolio-v1",
