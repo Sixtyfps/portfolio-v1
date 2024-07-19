@@ -19,7 +19,7 @@ const Description = styled.p`
 
 const Contact = styled.a`
   color: ${theme.colors.accentSecondary};
-  margin: 5px 0;
+  margin: 12px 0;
   display: flex;
   align-items: center;
   transition: ${theme.animations.transition};
@@ -31,7 +31,7 @@ const Contact = styled.a`
 `
 
 const ContactBox = styled.div`
-  padding: 16px;
+  padding: 16px 16px 0;
   border: 1px solid ${theme.colors.accentSecondary};
   
   @media ${theme.media.tablet} {
