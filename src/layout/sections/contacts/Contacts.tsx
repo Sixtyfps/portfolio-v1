@@ -4,6 +4,7 @@ import { Button } from "../../../components/Button";
 import { Container } from "../../../components/Container";
 import { S } from "./Contacts_Styles";
 import emailjs from '@emailjs/browser';
+import {enqueueSnackbar, SnackbarProvider} from "notistack";
 
 export const Contact: React.FC = () => {
 
@@ -21,7 +22,8 @@ export const Contact: React.FC = () => {
             const message = formData.get('message') as string;
 
             if (!fromName || !replyTo || !message) {
-                console.log('All fields are required.');
+                enqueueSnackbar('All fields are required.', {variant: "warning"})
+                console.log('All fields are required.')
                 return;
             }
 
@@ -29,10 +31,12 @@ export const Contact: React.FC = () => {
                 .sendForm('service_xjoxnmu', 'template_b6qllbh', form.current, 'Rd1hWf8Mx-3yKeQip')
                 .then(
                     () => {
-                        console.log('SUCCESS!');
-                        form.current?.reset();  // Reset the form after successful submission
+                        enqueueSnackbar('Success', {variant: "success"})
+                        console.log('SUCCESS!')
+                        form.current?.reset()  // Reset the form after successful submission
                     },
                     (error) => {
+                        enqueueSnackbar('Error', {variant: "error"})
                         console.log('FAILED...', error.text);
                     },
                 );
@@ -43,7 +47,7 @@ export const Contact: React.FC = () => {
         <S.Contact id="contact">
             <Container>
                 <SectionTitle>contact</SectionTitle>
-
+                <SnackbarProvider />
                 <S.StyledForm ref={form} onSubmit={sendEmail}>
                     <S.Label>Name</S.Label>
                     <S.Input placeholder="" type="text" name="from_name" />
