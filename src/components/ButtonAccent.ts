@@ -9,7 +9,7 @@ export const ButtonAccent = styled.button`
     font-size: 16px;
     font-weight: 500;
     white-space: nowrap;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     border: 1px solid ${theme.colors.accent};
     transition: ${theme.animations.transition};
 
