@@ -25,7 +25,14 @@ const PhotoContainer = styled.div`
     border: 1px solid ${theme.colors.accentSecondary};
     background-color: ${theme.colors.primaryBg};
   }
-  
+    @media (max-width: 780px) {
+        width: 100%;
+        &::after {
+            position: static;
+        }
+       
+    }
+
 `
 
 const Main = styled.section`
