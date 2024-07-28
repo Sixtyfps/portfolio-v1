@@ -46,7 +46,7 @@ const worksData = [
     {
         title: "Codewars",
         src: codewars,
-        text: "As I continuously improve my programming skills and algorithm-solving abilities, the list of solved problems grows every day. Currently, I am in the top 1% of users by honor level, with about 700 solved problems",
+        text: "As I continuously improve my programming skills and algorithm-solving abilities, the list of solved problems grows every day. Currently, I am in the top 0.8% of users by honor level, with more than 700 solved problems",
         type: "js",
         id: 2,
         codeLink: "https://github.com/Sixtyfps/codewars/blob/master/codewars.html",
